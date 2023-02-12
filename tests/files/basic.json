@@ -11,7 +11,7 @@
 		"int": 24,
 		"float": 1.61803,
 		"bool": false,
-		"string": "this is a string in an object",
+		"string": "this is /**** not a comment with additional stars ******/ a string in an object /* also not a comment */",
 		"array": [ {"hi": "hello"}, [1, 0] ],
 		"nested": {
 			"null": null,
