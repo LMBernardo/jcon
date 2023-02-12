@@ -27,7 +27,8 @@
         "build": "npx tsc",
         "test": "npx jest",
         "coverage": "npx jest --coverage=true",
-        "cov": "npm run coverage"
+        "cov": "npm run coverage",
+        "clean": "npx shx rm -rf ./build/* && npx shx rm -rf ./coverage/*"
     },
     "dependencies": {},
     "devDependencies": {
