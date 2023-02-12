@@ -1,21 +1,49 @@
 {
-  "name": "jcon",
-  "version": "0.0.1",
-  "description": "Converts commented JSON (JCON) files to normal JSON",
-  "email": "layne.bernardo@gmail.com",
-  "license": "TODO",
-  "main": "./build/jcon.js",
-  "scripts": {
-    "start": "node ./build/jcon.js",
-    "refresh": "npm run build && npm start",
-    "build": "npx tsc",
-    "test": "npx jest"
-  },
-  "devDependencies": {
-    "typescript": "^4.9.5",
-    "@types/node": "^18.13.0",
-    "@types/jest": "^29.4.0",
-    "jest": "^29.4.2",
-    "ts-jest": "^29.0.5"
+    "name": "jcon",
+    "version": "0.0.1",
+    "description": "Converts commented JSON (JCON) files to normal JSON",
+    "email": "layne.bernardo@gmail.com",
+    "license": "Apache 2.0",
+    "homepage": "https://github.com/LMBernardo/jcon",
+    "bugs": {
+        "url": "https://github.com/LMBernardo/jcon/issues",
+        "email": "layne.bernardo@gmail.com"
+    },
+    "main": "./build/jcon.js",
+    "files": [
+        "build/jcon.js"
+    ],
+    "directories": {
+        "bin": "./bin",
+        "man": "./man"
+    },
+    "publishConfig": {
+      "access": "public"
+    },
+    "scripts": {
+        "start": "node ./build/jcon.js",
+        "ts-node": "npx ts-node ./src/jcon.ts",
+        "refresh": "npm run build && npm start",
+        "build": "npx tsc",
+        "test": "npx jest"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "typescript": "^4.9.5",
+        "@types/node": "^18.13.0",
+        "@types/jest": "^29.4.0",
+        "jest": "^29.4.2",
+        "ts-jest": "^29.0.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LMBernardo/jcon.git"
+    },
+    "contributors": [
+        "Layne Bernardo <layne.bernardo@gmail.com> (https://github.com/LMBernardo)"
+    ],
+    "keywords": [
+        "json",
+        "typescript"
+    ]
   }
-}
