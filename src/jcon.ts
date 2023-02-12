@@ -70,7 +70,7 @@ function _remove_comments(value: string) {
     // Match inline comments with quotes - ' /* ... "something" else " ... */ '
     // Note: Matches can ONLY be actual comments since double quotes cannot be
     // inside of a string - e.g., ' " /* "something" */ " ' is malformed
-    let inline_comments_quotes = /\/\*.*"([^*]|[\n])*\*\//gm;
+    let inline_comments_quotes = /\/\*.*"([^*]|\n)*\*\//gm;
 
     // NOTE: Operations MUST be performed in this order, as removing line comments assumes
     //       that (and only works when) there are no inline comments containing quotes.
