@@ -1,0 +1,25 @@
+{
+	"null": null,
+	"int": 42,
+	"float": 3.14159,
+	"bool": true,
+	"string": "this is a string // not a comment",
+	"string2": "this is a string\n// still not a comment\nwith newlines",
+	"array": [ 1, "Two" ],
+	"object": {
+		"null": null,
+		"int": 24,
+		"float": 1.61803,
+		"bool": false,
+		"string": "this is a string in an object",
+		"array": [ {"hi": "hello"}, [1, 0] ],
+		"nested": {
+			"null": null,
+			"int": 66,
+			"float": 6.283185 ,
+			"bool": true,
+			"string": "this is a nested string",
+			"array": [ 23, 64 ]
+		}
+	}
+}
