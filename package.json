@@ -25,7 +25,9 @@
         "ts-node": "npx ts-node ./src/jcon.ts",
         "refresh": "npm run build && npm start",
         "build": "npx tsc",
-        "test": "npx jest"
+        "test": "npx jest",
+        "coverage": "npx jest --coverage=true",
+        "cov": "npm run coverage"
     },
     "dependencies": {},
     "devDependencies": {
