@@ -114,7 +114,12 @@ function _load_file(filename: string): FileData {
 
 function _require(filename: string): any {
     const { content } = _load_file(filename);
-    return JSON.parse(_to_json_string(content));
+    try {
+        return JSON.parse(_to_json_string(content));
+    } catch (err: any) {
+        err.message = filename + ": " + err.message;
+        throw err;
+    }
 }
 
 function _from(filename: string): any {
@@ -126,6 +131,5 @@ const jcon = {
     require: _require,
     from: _from,
 };
-
 
 export { jcon as default };
