@@ -53,20 +53,20 @@
     "removeComments": true,                              /* Disable emitting comments. */
     // "noEmit": true,                                   /* Disable emitting files from a compilation. */
     // "importHelpers": true,                            /* Allow importing helper functions from tslib once per project, instead of including them per-file. */
-    // "importsNotUsedAsValues": "remove",               /* Specify emit/checking behavior for imports that are only used for types. */
+    "importsNotUsedAsValues": "remove",                  /* Specify emit/checking behavior for imports that are only used for types. */
     // "downlevelIteration": true,                       /* Emit more compliant, but verbose and less performant JavaScript for iteration. */
     "sourceRoot": "src",                                 /* Specify the root path for debuggers to find the reference source code. */
     // "mapRoot": "",                                    /* Specify the location where debugger should locate map files instead of generated locations. */
     // "inlineSourceMap": true,                          /* Include sourcemap files inside the emitted JavaScript. */
     // "inlineSources": true,                            /* Include source code in the sourcemaps inside the emitted JavaScript. */
-    // "emitBOM": true,                                  /* Emit a UTF-8 Byte Order Mark (BOM) in the beginning of output files. */
-    // "newLine": "crlf",                                /* Set the newline character for emitting files. */
+    "emitBOM": true,                                     /* Emit a UTF-8 Byte Order Mark (BOM) in the beginning of output files. */
+    "newLine": "crlf",                                   /* Set the newline character for emitting files. */
     // "stripInternal": true,                            /* Disable emitting declarations that have '@internal' in their JSDoc comments. */
     // "noEmitHelpers": true,                            /* Disable generating custom helper functions like '__extends' in compiled output. */
-    // "noEmitOnError": true,                            /* Disable emitting files if any type checking errors are reported. */
-    // "preserveConstEnums": true,                       /* Disable erasing 'const enum' declarations in generated code. */
+    "noEmitOnError": true,                               /* Disable emitting files if any type checking errors are reported. */
+    "preserveConstEnums": false,                         /* Disable erasing 'const enum' declarations in generated code. */
     // "declarationDir": "./",                           /* Specify the output directory for generated declaration files. */
-    // "preserveValueImports": true,                     /* Preserve unused imported values in the JavaScript output that would otherwise be removed. */
+    "preserveValueImports": false,                       /* Preserve unused imported values in the JavaScript output that would otherwise be removed. */
 
     /* Interop Constraints */
     // "isolatedModules": true,                          /* Ensure that each file can be safely transpiled without relying on other imports. */
@@ -84,7 +84,7 @@
     "strictPropertyInitialization": true,                /* Check for class properties that are declared but not set in the constructor. */
     "noImplicitThis": true,                              /* Enable error reporting when 'this' is given the type 'any'. */
     // "useUnknownInCatchVariables": true,               /* Default catch clause variables as 'unknown' instead of 'any'. */
-    // "alwaysStrict": true,                             /* Ensure 'use strict' is always emitted. */
+    "alwaysStrict": true,                                /* Ensure 'use strict' is always emitted. */
     "noUnusedLocals": true,                              /* Enable error reporting when local variables aren't read. */
     "noUnusedParameters": true,                          /* Raise an error when a function parameter isn't read. */
     // "exactOptionalPropertyTypes": true,               /* Interpret optional property types as written, rather than adding 'undefined'. */
@@ -97,7 +97,7 @@
     // "allowUnreachableCode": true,                     /* Disable error reporting for unreachable code. */
 
     /* Completeness */
-    // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
+    "skipDefaultLibCheck": true,                         /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": ["src/**/*"]
