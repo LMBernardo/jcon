@@ -1,13 +1,15 @@
 {
-	// The value of "null" should be null"
+	// The value of "null" should be null
+	// and line comments with a mismatched " should be okay
 	"null": null,
-	/* These are tec"hnically both just `number`s, but
-	   we should check that both pars"e correctly an"yway */
+	/* These are "technically" both just `number`s, but
+	   we should check that both parse correctly anyway everything
+	   with a mismatched " */
 	"int": 42,
 	"float": 3.14159, // Pi is cool
 	"bool": true,
-	"string": /* this is an "inline comment */ "this is a string // not a comment",
-	"string2": /* this is an "inline comment */ "this is a string\n// still not a comment\nwith newlines",
+	"string": /* this is an inline comment */ "this is a string // not a comment",
+	"string2": /* this is an inline comment with "quotes"" */ "this is a string\n// still not a comment\nwith newlines",
 	"array": [ 1, "Two" ],
 	"object": {
 		"null": null,
@@ -17,8 +19,8 @@
 		"string": "this is /**** not a comment with additional stars ******/ a string in an object /* also not a comment */",
 		"array": [ {"hi": "hello"}, [1, 0] ],
 		"nested": {
-			"null": null,
-			"int": 66,
+			"null": null, /** ** A comment with additional stars **  and spaces and stuff ** **/
+			"int": 66, /** ** A comment with additional stars **  and spaces and "quotes" and " stuff ** **/
 			"float": 6.283185 ,
 			"bool": true,
 			/* this is a "nested comment" */ "string": "this is a nested string" /* and another nested comment */,
