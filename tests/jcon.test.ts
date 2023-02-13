@@ -8,6 +8,8 @@ import jcon from "../src/jcon";
 const basic_json_path = "tests/files/basic.json";
 const basic_jcon_path = "tests/files/basic.jcon";
 
+const invalid_json_path = "tests/files/invalid.json";
+const invalid_jcon_path = "tests/files/invalid.jcon";
 
 //*      Helpers      **//
 // Remove extraneous whitespace, etc.
@@ -53,6 +55,14 @@ describe("required()", () => {
         check_basic_json(required);
         expect(basic_json === JSON.stringify(required));
     });
+
+    it("should fail to read invalid json file", () => {
+        expect(() => jcon.require(invalid_json_path)).toThrow(SyntaxError);
+    });
+
+    it("should fail to read invalid jcon file", () => {
+        expect(() => jcon.require(invalid_jcon_path)).toThrow(SyntaxError);
+    });
 });
 
 
@@ -67,5 +77,13 @@ describe("from()", () => {
         const from = jcon.from(basic_jcon_path);
         check_basic_json(from.exports);
         expect(basic_json === JSON.stringify(from));
+    });
+
+    it("should fail to read invalid json file", () => {
+        expect(() => jcon.from(invalid_json_path)).toThrow(SyntaxError);
+    });
+
+    it("should fail to read invalid jcon file", () => {
+        expect(() => jcon.from(invalid_jcon_path)).toThrow(SyntaxError);
     });
 });

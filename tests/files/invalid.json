@@ -1,6 +1,6 @@
 {
 	"null": null,
-	"int": 42,
+	"int": 42
 	"float": 3.14159,
 	"bool": true,
 	"string": "this is a string // not a comment",
@@ -11,7 +11,7 @@
 		"int": 24,
 		"float": 1.61803,
 		"bool": false,
-		"string": "this is /**** not a comment with additional stars ******/ a string in an object /* also not a comment */",
+		"string": "this is a string in an object",
 		"array": [ {"hi": "hello"}, [1, 0] ],
 		"nested": {
 			"null": null,
